@@ -3,31 +3,29 @@ name: Build and Deploy Slides
 on:
   push:
     branches:
-      - test  # Only trigger on push to the main branch
+      - main  # Only trigger on push to main branch
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
+    - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Python
+    - name: Set up Python 3.11
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
 
-    - name: Install MkSlides
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install mkslides
+        pip install git+https://github.com/MartenBE/mkslides.git  # Install mkslides from GitHub
 
     - name: Build slides
       run: |
-        # Build the slides from the docs/ directory
-        mkslides build docs/slides.md
-        # Copy built content to docs/ to be served by GitHub Pages
+        mkslides build docs/slides.md  # Assuming your slides.md is inside the docs/ folder
         mkdir -p docs/build
         cp -r build/* docs/build/
 
