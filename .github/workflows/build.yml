@@ -25,7 +25,7 @@ jobs:
 
     - name: Build slides
       run: |
-        mkslides build docs/slides.md  # Assuming your slides.md is inside the docs/ folder
+        mkslides build docs/Money_Matters_Presentation.md  # Assuming your slides.md is inside the docs/ folder
         mkdir -p docs/build
         cp -r build/* docs/build/
 
