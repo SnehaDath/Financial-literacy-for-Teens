@@ -3,7 +3,7 @@ name: Build and Deploy Slides
 on:
   push:
     branches:
-      - main  # Only trigger on push to the main branch
+      - test  # Only trigger on push to the main branch
 
 jobs:
   build:
