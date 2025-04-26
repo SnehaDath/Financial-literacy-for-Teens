@@ -31,12 +31,11 @@ jobs:
         # Debug: List the files in the current directory to see if build/ exists
         ls -alh
         # Check if 'build/' exists and create if necessary
-        mkdir -p docs/build
-        cp -r /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/* docs/build/
+        cp -r /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/* build/
 
     - name: Commit and push built slides
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add docs/build/
+        git add build/
         git diff --cached --quiet || (git commit -m "Auto-build slides with MkSlides" && git push)
