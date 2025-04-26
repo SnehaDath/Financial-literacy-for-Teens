@@ -3,7 +3,7 @@ name: Build and Deploy Slides
 on:
   push:
     branches:
-      - test  # Only trigger on push to main branch
+      - main  # Only trigger on push to main branch
 
 jobs:
   build:
@@ -13,10 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Python 3.11
+    - name: Set up Python 3.12
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'
+        python-version: '3.12'  # Use Python 3.12
 
     - name: Install dependencies
       run: |
