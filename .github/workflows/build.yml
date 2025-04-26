@@ -30,7 +30,7 @@ jobs:
         ls -alh
         # Check if 'build/' exists and create if necessary
         mkdir -p docs/build
-        cp -r build/* docs/build/
+        cp -r /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/* docs/build/
 
     - name: Commit and push built slides
       run: |
