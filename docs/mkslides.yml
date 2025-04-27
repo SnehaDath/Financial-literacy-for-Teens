@@ -1,5 +1,6 @@
----
-title: Financial Literacy for Teens
-author: Sneha Dath
-revealjs_version: 4.4.0
-revealjs_theme: sky
+slides:
+  theme: sky
+revealjs:
+  height: 1080
+  width: 1920
+  transition: slide
