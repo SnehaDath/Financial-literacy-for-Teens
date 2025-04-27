@@ -1,6 +1,6 @@
-
+theme: sky
+---
 # 📘 Money Matters! Your Guide to Financial Fun!
-theme: sky  # 👈 change this to any of the themes below
 
 ### 👧 Age Range: 9–13 years  
 **Image Suggestion:** A group of diverse kids with coins and money symbols.
