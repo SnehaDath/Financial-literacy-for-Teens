@@ -27,7 +27,7 @@ jobs:
 
     - name: Build slides
       run: |
-        mkslides build --config-file mkslides.yml docs/Money_Matters_Presentation.md # Assuming your slides.md is inside the docs/ folder
+        mkslides build --config-file docs/mkslides.yml docs/Money_Matters_Presentation.md # Assuming your slides.md is inside the docs/ folder
         # Debug: List the files in the current directory to see if build/ exists
         ls -alh
         # Check if 'build/' exists and create if necessary
