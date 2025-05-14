@@ -1,7 +1,7 @@
 
 # **💰 Money Matters! Your Guide to Financial Fun! 🎉**
 
-- _Image: A gang of cool Indian kids with coins, rupee notes, and phones buzzing with Paytm and PhonePe!_ 📱🪙
+- ![A gang of cool Indian kids with coins, rupee notes, and phones buzzing with Paytm and PhonePe!_ 📱🪙](images/kids-money.jpg)
     
 - _Age Range: 9–13 years_
     
