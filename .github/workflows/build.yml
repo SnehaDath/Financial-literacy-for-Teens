@@ -3,7 +3,7 @@ name: Build and Deploy Slides
 on:
   push:
     branches:
-      - Insurance  # Only trigger on push to main branch
+      - insurance  # Only trigger on push to main branch
 
 jobs:
   build:
