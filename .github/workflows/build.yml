@@ -27,7 +27,9 @@ jobs:
 
     - name: Build slides
       run: |
-        mkslides build --config-file docs/mkslides.yml docs/Money_Matters_Presentation.md 
+        mkslides build --config-file docs/mkslides.yml docs/Money_Matters_Presentation.md
+        cd /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/
+        ls -lh
         mv index.html Money_Matters_Presentation.html
         mkslides build --config-file docs/mkslides.yml docs/Term_insurance_ppt.md
         mv index.html Term_insurance_ppt.html
