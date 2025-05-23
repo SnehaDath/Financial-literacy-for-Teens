@@ -28,8 +28,10 @@ jobs:
     - name: Build slides
       run: |
         mkslides build --config-file docs/mkslides.yml docs/Money_Matters_Presentation.md
+        mkdir -p build/Money_Matters_Presentation
         cp -r /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/* build/Money_Matters_Presentation
         mkslides build --config-file docs/mkslides.yml docs/Term_insurance_ppt.md
+         mkdir -p build/Term_insurance_ppt
         cp -r /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/* build/Term_insurance_ppt
         # Debug: List the files in the current directory to see if build/ exists
         ls -alh
