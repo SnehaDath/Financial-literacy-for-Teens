@@ -28,15 +28,12 @@ jobs:
     - name: Build slides
       run: |
         mkslides build --config-file docs/mkslides.yml docs/Money_Matters_Presentation.md
-        cd /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/
-        ls -lh
-        mv index.html Money_Matters_Presentation.html
+        cp -r /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/* build/Money_Matters_Presentation
         mkslides build --config-file docs/mkslides.yml docs/Term_insurance_ppt.md
-        mv index.html Term_insurance_ppt.html
+        cp -r /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/* build/Term_insurance_ppt
         # Debug: List the files in the current directory to see if build/ exists
         ls -alh
-        # Check if 'build/' exists and create if necessary
-        cp -r /home/runner/work/Financial-literacy-for-Teens/Financial-literacy-for-Teens/site/* build/
+        # Check if 'build/' exists and create if necessary        
 
     - name: Commit and push built slides
       run: |
